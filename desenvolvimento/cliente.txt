@@ -1,0 +1,79 @@
+package sample;
+
+import sample.model.Cliente;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Cliente cliente = new Cliente();
+        Cliente.setNome("João");
+        Cliente.setEmail("joão@estudante.do.senai.br");
+        Cliente.setTelefone("48999999999");
+        Cliente.setIdade(17);
+
+        System.out.println(cliente);
+
+    }
+}
+
+
+
+
+
+
+
+
+package sample.model;
+
+public class Cliente {
+
+    private String nome;
+    private String email;
+    private String telefone;
+    private int idade;
+
+    //get and set
+
+    public String getNome() {
+        return nome;
+    }
+
+    public static void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public static void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public static void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public static void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
+}

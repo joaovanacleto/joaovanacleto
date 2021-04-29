@@ -1,0 +1,149 @@
+﻿Unidade: CTAI
+	Curso: Ensino Médio – Desenvolvimento de Sistemas
+	Unidade Curricular:
+	Implantação e Manutenção de Sistemas
+	Docente:
+	Paulo Battistella, Dr.
+	03/2021
+	
+
+Lista de Exercícios
+Comandos do Linux 
+
+
+LINUX ONLINE: https://cocalc.com/doc/terminal.html
+	Exercício 1
+
+
+1. Crie uma pasta com seu nome usando o comando “$ mkdir nome”.
+
+
+2. Entre na pasta usando o comando “$ cd nome”.
+
+
+3. Crie um arquivo txt usando “$ touch meuarquivo.txt”.
+
+
+4. Adicione um conteúdo ao arquivo usando o comando “$ nano meuarquivo.txt”.
+
+
+5. Visualise os dados do arquivo usando o comando “$ cat meuarquivo.txt”.
+
+
+6. Crie um arquivo “pagina.html” usando o comando “$ touch pagina.html”.
+
+
+7. Usando o Nano, adicione as TAGs: H1, B, P, label, Input, Button.
+
+
+8. Mostre os dados do arquivo usando o comando Cat.
+~/joao$ mkdir joao
+~/joao$ cd joao
+~/joao/joao$ touch meuarquivo.txt
+
+
+~/joao/joao$ nano meuarquivo.txt
+~/joao/joao$ touch pagina.html
+~/joao/joao$ nano pagina.html
+~/joao/joao$ cat pagina.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>aa</h1>
+    <b>ss</b>
+    <p>aa</p>
+
+
+
+
+    <label for="button">a</label>
+    <input type ="text">
+    <button onclick=""></button>
+</body>
+</html>
+~/joao/joao$ 
+
+
+
+
+
+
+	Exercício 2
+
+
+1. Adicione uma pasta “www” com o comando “$ mkdir www”.
+
+
+2. Entre na pasta criada usando o comando “$ cd www”.
+
+
+3. Crie uma pasta “meuSite” usando o comando “$ mkdir meuSite”.
+
+
+4. Entre na pasta criada usando o comando “$cd www”.
+
+
+5. Use o comando touch para criar o arquivo “index.html”. Comando: “$toach index.html”.
+
+
+6. Use o nano para editar o arquivo “index.html”. Adicione uma estrutura HTML básica. No Body você deve adicionar um Menu para os arquivos: “index.html”, “empresa.html”, “produtos.html” e “sobre.html”.
+
+
+7. Crie os arquivos “empresa.html”, “produtos.html” e “sobre.html” e adicione o mesmo menu criado para página index. Todos os links do menu devem funcionar corretamente.
+
+
+8. Volte a raiz do seu usuário. Você pode utilizar o comando “$ cd /home/user/” ou usar duas vezes o comando “$ cd ..”. Na primeira opção você caminha direto para a pasta alvo, na segunda você retorna a pasta de nível anterior.
+
+
+9. Digite o comando “$ls” e você verá a sua pasta “www”.
+
+
+10.  Compacte a pasta “www” com seus conteúdos: pasta e arquivos. Use o comando “tar” para comprimir, os parâmetros c (cria um arquivo .tar), v (mostra o progresso), z (utiliza a compressão gzip) e f (nome do arquivo). 
+
+
+~/joao$ mkdir www
+~/joao$ cd www
+~/joao/www$ mkdir meu Site
+~/joao/www$ mkdir meuSite
+~/joao/www$ touch index.html
+~/joao/www$ nano index.html
+~/joao/www$ touch empresa.html
+~/joao/www$ nano empresa.html
+~/joao/www$ touch produtos.html
+~/joao/www$ nano produtos.html
+~/joao/www$ touch sobre.html
+~/joao/www$ nano sobre.html
+~/joao/www$ cd ..
+~/joao$ ls
+2021-04-05-203908.term  2021-04-05-203926.term  aquirvo.txt  joao  meuarquivo.txt  pagina.html  www
+~/joao$ tar -cvzf meuSite.tar.gz www
+www/
+www/meu/
+www/index.html
+www/Site/
+www/sobre.html
+www/empresa.html
+www/meuSite/
+www/produtos.html
+~/joao$ 
+
+
+
+
+
+
+
+
+
+
+
+
+	Exercício 3
+
+
+Pesquise os passos para criação de uma máquina virtual do Ubuntu. Cole os prints das telas aqui. Pode ser um tutorial ou screenshots do video.

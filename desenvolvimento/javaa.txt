@@ -1,0 +1,95 @@
+package sample.model;
+
+public class Pessoa {
+    private String nome;
+    private String sobrenome;
+    private String email;
+    private String telefone;
+
+    public Pessoa(){}
+    public Pessoa(String nome){
+        this.nome = nome;
+    }
+    public Pessoa(String nome, String sobrenome){
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getSobrenome() {
+        return sobrenome;
+    }
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getTelefone() {
+        return telefone;
+    }
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    @Override
+    public String toString() {
+        return nome +
+                " " + sobrenome +
+                ", e-mail:" + email +
+                ", telefone:" + telefone;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+package sample.model;
+
+public class Funcionario extends Pessoa{
+    private String funcao;
+    private double salario;
+
+    public Funcionario(){}
+    public Funcionario(String nome){
+        super(nome);
+    }
+    public Funcionario(String nome, String sobrenome){
+        super(nome, sobrenome);
+    }
+
+    public String getFuncao() {
+        return funcao;
+    }
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+    public double getSalario() {
+        return salario;
+    }
+    public void setSalario(double valorHora, double qtdeHora) {
+        this.salario = valorHora * qtdeHora;
+    }
+
+    public String toString(){
+        return super.toString() + "\n"
+                + "Função: " + funcao
+                + "Salário: " + salario;
+    }
+}
